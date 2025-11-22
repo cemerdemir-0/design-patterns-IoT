@@ -1,0 +1,84 @@
+.dashboard {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.dashboard-header h1 {
+  color: var(--text-dark);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  background: var(--card-bg);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--secondary);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.icon-button:active {
+  transform: translateY(0);
+}
+
+.date-time {
+  color: var(--text-light);
+}
+
+.date-time .time {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.date-time .date {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.devices-section {
+  margin-top: 24px;
+}
+
+.devices-section h2 {
+  color: var(--text-dark);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.devices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}

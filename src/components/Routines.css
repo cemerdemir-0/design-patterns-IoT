@@ -1,0 +1,94 @@
+.routines {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.routines-header {
+  margin-bottom: 24px;
+}
+
+.routines-header h1 {
+  color: var(--text-dark);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.routines-header p {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.routines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.routine-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--neutral);
+}
+
+.routine-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.routine-card.active {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+}
+
+.routine-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.routine-info {
+  flex: 1;
+}
+
+.routine-info h3 {
+  color: var(--text-dark);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.routine-info p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.routine-actions {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--neutral);
+}
+
+.action-item {
+  color: var(--success);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

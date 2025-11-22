@@ -1,0 +1,86 @@
+.logs {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.logs-header {
+  margin-bottom: 24px;
+}
+
+.logs-header h1 {
+  color: var(--text-dark);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.logs-header p {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.log-item {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-left: 4px solid var(--neutral);
+  transition: all 0.2s ease;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.log-item.info {
+  border-left-color: var(--secondary);
+}
+
+.log-item.success {
+  border-left-color: var(--success);
+}
+
+.log-item.warning {
+  border-left-color: var(--accent);
+}
+
+.log-item.alert {
+  border-left-color: var(--danger);
+}
+
+.log-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.log-content {
+  flex: 1;
+}
+
+.log-message {
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.log-time {
+  color: var(--text-light);
+  font-size: 12px;
+}

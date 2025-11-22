@@ -1,38 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  transition: background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+body.dark-mode .App {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-bottom: 80px;
+  transition: background 0.3s ease;
+}
+
+.app-container.dark {
+  background: #0f1419;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  --primary: #1A3C6E;
+  --secondary: #3C6EB4;
+  --accent: #FFD166;
+  --neutral: #ECECEC;
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+  --success: #2ecc71;
+  --danger: #e74c3c;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --border-color: #e0e0e0;
+  --input-bg: #ffffff;
+}
+
+body.dark-mode {
+  --primary: #4A90E2;
+  --secondary: #5BA3F5;
+  --accent: #FFD166;
+  --neutral: #2d3748;
+  --text-dark: #e2e8f0;
+  --text-light: #a0aec0;
+  --success: #48bb78;
+  --danger: #fc8181;
+  --card-bg: #1a202c;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --border-color: #2d3748;
+  --input-bg: #2d3748;
+}
+
+.app-container.dark {
+  background: #0f1419;
 }
