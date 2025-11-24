@@ -5,6 +5,7 @@ import DeviceDetail from './components/DeviceDetail';
 import Routines from './components/Routines';
 import Logs from './components/Logs';
 import Settings from './components/Settings';
+import EnergyDashboard from './components/EnergyDashboard';
 import Navigation from './components/Navigation';
 import LocationManager from './components/LocationManager';
 import ProfileMenu from './components/ProfileMenu';
@@ -58,6 +59,8 @@ function App() {
         return <Dashboard onDeviceClick={handleDeviceClick} />;
       case 'device-detail':
         return <DeviceDetail device={selectedDevice} onBack={handleBack} />;
+      case 'energy':
+        return <EnergyDashboard />;
       case 'routines':
         return <Routines />;
       case 'logs':

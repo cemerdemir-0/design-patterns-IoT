@@ -1,0 +1,292 @@
+.energy-dashboard {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.energy-header {
+  margin-bottom: 24px;
+}
+
+.energy-header h1 {
+  color: var(--text-dark);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.energy-header p {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.card-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-label {
+  color: var(--text-light);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.card-value {
+  color: var(--text-dark);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.card-subtitle {
+  color: var(--text-light);
+  font-size: 11px;
+}
+
+.chart-section {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.chart-section h3 {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Bar Chart */
+.bar-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.bar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-wrapper {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bar-fill {
+  width: 100%;
+  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  border-radius: 8px 8px 4px 4px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.bar-fill:hover {
+  opacity: 0.8;
+  transform: translateY(-4px);
+}
+
+.bar-value {
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.bar-label {
+  color: var(--text-light);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Device Distribution */
+.device-distribution {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.device-usage-item {
+  display: grid;
+  grid-template-columns: 120px 1fr 50px;
+  align-items: center;
+  gap: 12px;
+}
+
+.device-usage-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.device-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.device-name {
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.device-usage-bar {
+  height: 24px;
+  background: var(--neutral);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.device-usage-fill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.5s ease;
+}
+
+.device-usage-percent {
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Line Chart */
+.line-chart {
+  position: relative;
+}
+
+.line-chart-grid {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-line {
+  border-bottom: 1px dashed var(--border-color);
+  position: relative;
+}
+
+.grid-label {
+  position: absolute;
+  left: -30px;
+  top: -8px;
+  color: var(--text-light);
+  font-size: 11px;
+}
+
+.line-chart-content {
+  height: 200px;
+  padding-left: 10px;
+}
+
+.line-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.line-chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-left: 10px;
+}
+
+.hour-label {
+  color: var(--text-light);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Tips Section */
+.tips-section {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+body.dark-mode .tips-section {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+.tips-section h3 {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tip-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.tip-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.tip-content {
+  flex: 1;
+}
+
+.tip-title {
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tip-desc {
+  color: var(--text-light);
+  font-size: 12px;
+  line-height: 1.4;
+}

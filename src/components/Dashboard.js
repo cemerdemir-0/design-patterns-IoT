@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
 import WeatherWidget from './WeatherWidget';
+import EnergyWidget from './EnergyWidget';
 import DeviceCard from './DeviceCard';
 import { DeviceMediator } from '../patterns/DeviceMediator';
 
@@ -73,6 +74,8 @@ const Dashboard = ({ onDeviceClick }) => {
       </div>
 
       <WeatherWidget />
+      
+      <EnergyWidget />
 
       <div className="devices-section">
         <h2>Cihazlarım</h2>

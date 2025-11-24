@@ -4,7 +4,8 @@ import './Navigation.css';
 const Navigation = ({ currentScreen, setCurrentScreen }) => {
   const navItems = [
     { id: 'dashboard', label: 'Ana Sayfa', icon: '🏠' },
-    { id: 'routines', label: 'Rutinler', icon: '⚡' },
+    { id: 'energy', label: 'Enerji', icon: '⚡' },
+    { id: 'routines', label: 'Rutinler', icon: '🔄' },
     { id: 'logs', label: 'Günlük', icon: '📋' },
     { id: 'settings', label: 'Ayarlar', icon: '⚙️' }
   ];

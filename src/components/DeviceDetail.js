@@ -226,7 +226,7 @@ const DeviceDetail = ({ device, onBack }) => {
                 <span>{deviceState.motion ? '👁️' : '💤'}</span>
               </div>
             </div>
-          </>
+          </> 
         );
 
       default:
